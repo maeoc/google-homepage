@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <style>
+    #box-container {
+        display: flex;
+        justify-content: center;
+    }
+    #box-1 {
+
+    }
+    #box-2 {
+
+    }
 #googlelogo {}
 .logo {
     padding: 250px 500px 0px 450px;
+}
+.searchbar {
+    /* padding: 0px 100px 0px 500px; --> */
+    border-radius: 10%;
+    width: auto;
+    height: 200px;
+    align-self: center;
 }
 </style>
 <html>
@@ -14,14 +31,13 @@
     
 <main>
 <p>
-<img class="logo" id="googlelogo"
+<img class="logo" id="box-1"
 src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
 alt= "The Google logo">
-<!---<form> 
-    <input type="text">
+<form> 
+    <input class="searchbar" id="box-2" type="text" placeholder="Search Google or type a URL">
     
 </form>
--->
 </p>    
 </main>
     </body>
