@@ -15,11 +15,16 @@
     padding: 250px 500px 0px 450px;
 }
 .searchbar {
-    /* padding: 0px 100px 0px 500px; --> */
+    border: 2px solid gray;
     border-radius: 10%;
-    width: auto;
-    height: 200px;
-    align-self: center;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 500px 0px 400px;
+    box-sizing: border-box;
+    outline: none;
+}
+.searchicon {
+    size: 1%;
 }
 </style>
 <html>
@@ -35,9 +40,11 @@
 src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
 alt= "The Google logo">
 <form> 
-    <input class="searchbar" id="box-2" type="text" placeholder="Search Google or type a URL">
-    
+    <input class="searchbar" id="box-2" type="text" placeholder="Search Google or type a URL">  
 </form>
+<img class="searchicon" id="box-3" src= "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ios-search.svg/1024px-Ios-search.svg.png"
+alt= "search icon">
+
 </p>    
 </main>
     </body>
