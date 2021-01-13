@@ -76,16 +76,32 @@
     background-color: transparent;
     background: url(https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg) no-repeat center;
     background-size: 20px 20px;
-    position:  absolute;
+    position: absolute;
 }
 </style>
-<html>
-    <head>
-        <!-- metadata elements -->
-    </head>
-    <body>
-        <!-- page contents -->
-    
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Google Homepage </title>
+</head>
+<body>
+    <div id="navbar">
+        <!--this is where the 'gmail' 'images' and Apps icon will go -->
+        <a href="#" id="gmail">Gmail</a>
+        <a href="#" id="images">Images</a>
+        <a href="#" id="appsicon"><img src="GoogleAppsIcon.png" height="30px" width="30px"> </a>
+    </div>
+    <div id="main">
+        <!--this is where the google logo and search bar, including search icon and voice search icon will be-->  
+        <a href="#" id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> </a>
+        <input type="text" id="search">
+        <button id="voicesearch"></button> 
+    </div>
+    <div id="footer">
+        <!--this is where the little customize button goes, i guess-->
+        <button id="customize">Customize</button>
+    </div>
 <main>
 <p>
 <img class="logo" src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
