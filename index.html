@@ -4,21 +4,22 @@
     padding: 250px 500px 0px 450px;
 }
 .searchbar {
-    border: 2px solid rgb(12, 12, 12);
-    border-radius: 20%;
+    border: 2px solid black;
+    border-radius: 10mm;
     width: 30%;
     padding: 10px 10px 10px 40px;
     margin: 0px 400px 0px 400px;
     box-sizing: border-box;
     outline: none;
-    background-color: white;
+    background-color: transparent;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ios-search.svg/1024px-Ios-search.svg.png);
     background-position: 10px;
     background-size: 20px;
     background-repeat: no-repeat;
-    font-family: Roboto;
+    font-family: Roboto; 
     font-size: 15px;
     box-shadow: gray; 
+    font: rgb(77, 76, 76);
 }
 .searchicon {
     width: 20px;
@@ -35,6 +36,44 @@
 .mic2 {
     width: 30px;
     margin: 0px 400px 0px 740px;
+    border: none;
+    background-color: transparent;
+}
+.input-wrapper {
+    display: inline-block;
+   /* width: 200px;
+    border: 1px solid black;
+    border-radius: 10mm;
+    width: 30%;
+    height: 10%;
+    padding: 10px 10px 10px 40px;
+    margin: 0px 400px 0px 400px;
+    background-color: white;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ios-search.svg/1024px-Ios-search.svg.png);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    font-size: 15px;
+    box-shadow: gray; */
+}
+
+/*.input-wrapper button {
+    float: right;
+}*/
+.mic3 {
+    border: 100px black;
+    width: 26px;
+    height: 100%;
+    padding: 10px 10px 10px 40px;
+    margin: 0px 400px 0px 400px;
+    outline: none;
+    background-color: transparent;
+    background-image: url(https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    position:absolute;
 }
 </style>
 <html>
@@ -48,12 +87,10 @@
 <p>
 <img class="logo" src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
 alt= "The Google logo">
-<div>
-<form> 
+<div class="input-wrapper">
     <input class="searchbar" type="text" placeholder="Search Google or type a URL">  
-    <!--<button class="mic"> BUTTS </button> -->
     <input type="image" class="mic2" alt="voice search" src="https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg">
-</form>
+    <input type="button" class="mic3">
 </div>
 </p>    
 </main>
