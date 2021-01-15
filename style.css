@@ -55,7 +55,7 @@ a {
     grid-area: search;
     justify-self: center;    
     align-self: center;
-    width: 400px;
+    width: 500px;
     border: 2px solid black;
     border-radius: 10mm;
     box-sizing: border-box;
@@ -82,12 +82,29 @@ a {
     left: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20px;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-rows: 40px;
     grid-template-areas: 
     ". . customize";
 }
 #customize {
     grid-area: customize;
-    align-self: flex-end;
+    align-self: right;
+    justify-self: right;
+    margin-right: 20px;
+    padding: 2px 20px 2px 35px;
+    border: 2px #1a73e8 solid;
+    border-radius: 10mm;
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+    background-image: url(https://cdn.iconscout.com/icon/free/png-512/pencil-pen-ui-erase-tool-interface-ui-6-15152.png);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    font-family: Roboto, system-ui, sans-serif;
+    font-size: 13px;
+    box-shadow: gray; 
+    color: #1a73e8;
+
 }
