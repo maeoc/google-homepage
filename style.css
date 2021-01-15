@@ -2,6 +2,7 @@ html {
     height: 100%;
     min-height: 100%;
 }
+/*Navbar section*/
 #navbar {
     display: grid;
     grid-template-columns: 1fr 60px 60px 50px;
@@ -11,8 +12,9 @@ html {
 }
 a {
     text-decoration: none; 
-    color: rgb(41, 40, 40);
+    color: rgba(0,0,0,0.87);
     font-family: Arial, sans-serif;
+    font-size: 13px;
 }
 
 #gmail {
@@ -30,4 +32,56 @@ a {
     grid-area: appsicon;
     justify-self: center;
     align-self: center;
+}
+/*Main section*/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 125px;
+    grid-template-areas: 
+    ". logo ."
+    ". search voicesearch";
+}
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    height: 30px;
+    padding: 10px 10px 10px 40px;
+    grid-area: search;
+    justify-self: center;    
+    align-self: center;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10mm;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ios-search.svg/1024px-Ios-search.svg.png);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    font-family: Roboto; 
+    font-size: 15px;
+    box-shadow: gray; 
+    font: rgb(77, 76, 76);
+}
+#voicesearch {
+    grid-area: voicesearch;
+    justify-self: center;
+    align-self: center;
+}
+/*Footer section*/
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px;
+    grid-template-areas: 
+    ". . customize";
+}
+#customize {
+    grid-area: customize;
+    justify-self: right;
 }
