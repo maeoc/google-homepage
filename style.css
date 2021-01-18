@@ -42,16 +42,25 @@ a:hover {
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 280px 125px;
+    grid-template-rows: 280px;
     grid-column-start: ;
     grid-template-areas: 
-    ". logo ."
-    ". search voicesearch";
+    ". logo .";
 }
 #logo {
     grid-area: logo;
     justify-self: center;
     align-self: end;
+}
+
+/*Searchbar section*/
+#searchbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px;
+    grid-column-start: ;
+    grid-template-areas: 
+    ". search voicesearch";
 }
 #search {
     height: 35px;
@@ -123,5 +132,8 @@ a:hover {
     font-size: 13px;
     box-shadow: 1px 1px 3px 0px gray; 
     color: #1a73e8;
+}
 
+#customize:hover {
+    cursor: pointer;
 }
