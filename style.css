@@ -7,10 +7,10 @@ html {
     position: absolute
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 60px 60px 50px;
+    grid-template-columns: 1fr 60px 60px 50px 50px;
     grid-template-rows: 50px;
-    grid-template-areas: 
-    ". gmail images appsicon";
+    grid-template-areas:
+    ". gmail images appsicon gmailpic";
 }
 a {
     text-decoration: none; 
@@ -37,12 +37,17 @@ a:hover {
     justify-self: center;
     align-self: center;
 }
+#gmailpic {
+    grid-area: gmailpic;
+    justify-self: center;
+    align-self: center;
+}
 
 /*Main section*/
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 280px;
+    grid-template-rows: 220px;
     grid-column-start: ;
     grid-template-areas: 
     ". logo .";
@@ -57,7 +62,7 @@ a:hover {
 #searchbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 125px;
+    grid-template-rows: 135px;
     grid-column-start: ;
     grid-template-areas: 
     ". search voicesearch";
