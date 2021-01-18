@@ -18,7 +18,9 @@ a {
     font-family: Arial, sans-serif;
     font-size: 13px;
 }
-
+a:hover {
+    text-decoration: underline;
+}
 #gmail {
     grid-area: gmail;
     justify-self: center;
@@ -35,11 +37,13 @@ a {
     justify-self: center;
     align-self: center;
 }
+
 /*Main section*/
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 280px 125px;
+    grid-column-start: ;
     grid-template-areas: 
     ". logo ."
     ". search voicesearch";
@@ -56,7 +60,7 @@ a {
     justify-self: center;    
     align-self: center;
     width: 525px;
-    border: .5px; /*.5px solid rgba(0, 0, 0, 0.247);*/
+    border: .5px;
     border-radius: 10mm;
     box-sizing: border-box;
     outline: none;
