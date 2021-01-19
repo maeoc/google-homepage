@@ -1,66 +1,4 @@
 <!DOCTYPE html>
-<!--
-<style>
-.logo {
-    padding: 250px 500px 0px 450px;
-}
-.searchbar {
-    border: 2px solid black;
-    border-radius: 10mm;
-    width: 30%;
-    padding: 10px 10px 10px 40px;
-    margin: 0px 400px 0px 400px;
-    box-sizing: border-box;
-    outline: none;
-    background-color: transparent;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ios-search.svg/1024px-Ios-search.svg.png);
-    background-position: 10px;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    font-family: Roboto; 
-    font-size: 15px;
-    box-shadow: gray; 
-    font: rgb(77, 76, 76);
-}
-.searchicon {
-    width: 20px;
-}
-.mic {
-    height: 20px
-    width: 10px;
-    margin-left: -7%;
-    background-color: transparent;
-    border: none;
-    font-size: 15px;
-    image:
-}
-.mic2 {
-    width: 30px;
-    margin: 0px 400px 0px 740px;
-    border: none;
-    background-color: transparent;
-}
-.input-wrapper {
-    height: 100%;
-    position: relative;
-    display: block;
-}
-.mic3 {
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 100%;
-    width: 26px;
-    height: 100%;
-    padding: 0;
-    right: 16px;
-    outline: none;
-    background-color: transparent;
-    background: url(https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg) no-repeat center;
-    background-size: 20px 20px;
-    position: absolute;
-}
-</style> -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -79,7 +17,7 @@
         <!--this is where the google logo and search bar, including search icon and voice search icon will be-->  
         <a href="#" id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> </a>
     </div>
-    <!-- So I had to divide logo from search bar to create an input wrapper-->
+    <!-- I tried to divide logo from search bar to create an input wrapper, but that didn't work-->
     <div id="searchbar">
         <input type="text" placeholder="Search Google or type a URL" id="search">
         <button id="voicesearch"><img id="vsicon" src="https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg"></a></button>
@@ -88,16 +26,5 @@
         <!--this is where the little customize button goes, i guess-->
         <button id="customize">Customize</button>
     </div>
-<!-- <main>
-<p>
-<img class="logo" src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-alt= "The Google logo">
-<div class="input-wrapper">
-    <input class="searchbar" type="text" placeholder="Search Google or type a URL">  
-    <input type="image" class="mic2" alt="voice search" src="https://blog.expertrec.com/wp-content/uploads/2019/06/Google-Voice.jpg">
-    <input type="button" class="mic3">
-</div>
-</p>    
-</main> -->
     </body>
 </html>
