@@ -2,6 +2,9 @@ html {
     height: 100%;
     min-height: 100%;
 }
+form {
+    margin: auto;
+}
 /*Navbar section*/
 #navbar {
     position: absolute
@@ -89,8 +92,9 @@ a:hover {
     font: rgb(77, 76, 76); 
 }
 #voicesearch {
-    grid-area: voicesearch;
-    justify-self: left;
+    grid-area: search;
+    display:block;
+    justify-self: right;
     align-self: center;
     -webkit-appearance: none;
     background: transparent;
